@@ -4,17 +4,19 @@ object Main {
   var time: Int = 0
   def setTime(i: Int): Unit = { time = i; println("\n-- time is " + i) }
 
-
+  // val: evaluated once, as early as possible
   val valAppendTime: String => String = {
     val t = time
     (x: String) => x + t
   }
 
+  // lazy val: evaluated once, as late as possible
   lazy val lazyValAppendTime: String => String = {
     val t = time
     (x: String) => x + t
   }
 
+  // def: evaluated each time it's called
   def def1AppendTime: String => String = {
     val t = time
     (x: String) => x + t
