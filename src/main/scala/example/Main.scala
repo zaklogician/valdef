@@ -75,6 +75,18 @@ object Main {
     println( gDef1("gDef1:") )
     println( gDef2F("gDef2F:") )
     println( gDef2L("gDef2L:") )
+
+    setTime(6)
+    println( fVal("fVal:") )
+    println( fLazyVal("fLazyVal:") )
+    println( fDef1("fDef1:") )
+    println( fDef2F("fDef2F:") )
+    println( fDef2L("fDef2L:") )
+    println( gVal("gVal:") )
+    println( gLazyVal("gLazyVal:") )
+    println( gDef1("gDef1:") )
+    println( gDef2F("gDef2F:") )
+    println( gDef2L("gDef2L:") )
   }
 
 }
